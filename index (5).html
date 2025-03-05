@@ -1,0 +1,175 @@
+ 
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>联系我们</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url(img/黄色.jpg);
+            }
+    .resume-container {
+    display: none; /* 默认隐藏所有简历 */
+  }
+  .active {
+    display: block; /* 显示当前激活的简历 */
+  }
+  .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            margin: 0;
+        }
+        .profile {
+            background-color: #f9f9f9;
+            padding: 10px;
+            border: 1px solid #eee;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .profile img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+        }
+        .profile h1 {
+            margin: 10px 0;
+        }
+        .info {
+            margin-bottom: 20px;
+        }
+        .info h2 {
+            margin-bottom: 10px;
+        }
+        .info p {
+            line-height: 1.6;
+        }        
+        
+    </style>
+</head>
+<body>
+	<div id="resume1" class="resume-container active">
+    <div class="container">
+        <div class="header">
+            <h1>联系人介绍</h1>
+        </div>
+        <div class="profile">
+            <img src="img/坨坨.jpg" alt="联系人照片" class="profile-pic">
+            <div class="info">
+                <h2>母佳慧</h2>
+                <p><strong>职位：</strong>负责人</p >
+                <p><strong>公司：</strong>绿动星球游戏有限公司</p >
+                <p><strong>邮箱：</strong>3393696094@qq.com</p >
+                <p><strong>电话：</strong>13419499790</p >
+                <p><strong>地址：</strong>资阳口腔职业学院</p >
+            </div>
+        </div>
+    </div>
+    </div>
+    <div id="resume2" class="resume-container active">
+    <div class="container">
+        <div class="header">
+            <h1>联系人介绍</h1>
+        </div>
+        <div class="profile">
+            <img src="img/古里.jpg" alt="联系人照片" class="profile-pic">
+            <div class="info">
+                <h2>俄木古里</h2>
+                <p><strong>职位：</strong>数据管理员</p >
+                <p><strong>公司：</strong>绿动星球游戏有限公司</p >
+                <p><strong>邮箱：</strong>3393696094@qq.com</p >
+                <p><strong>电话：</strong>13419499790</p >
+                <p><strong>地址：</strong>资阳口腔职业学院</p >
+            </div>
+        </div>
+    </div>
+    </div>
+    <div id="resume3" class="resume-container active">
+    <div class="container">
+        <div class="header">
+            <h1>联系人介绍</h1>
+        </div>
+        <div class="profile">
+            <img src="img/李洋洋.jpg" alt="联系人照片" class="profile-pic">
+            <div class="info">
+                <h2>李垟垟</h2>
+                <p><strong>职位：</strong>市场分析员</p >
+                <p><strong>公司：</strong>绿动星球游戏有限公司</p >
+                <p><strong>邮箱：</strong>3393696094@qq.com</p >
+                <p><strong>电话：</strong>13419499790</p >
+                <p><strong>地址：</strong>资阳口腔职业学院</p >
+            </div>
+        </div>
+    </div>
+    </div>
+    <div id="resume4" class="resume-container active">
+    <div class="container">
+        <div class="header">
+            <h1>联系人介绍</h1>
+        </div>
+        <div class="profile">
+            <img src="img/文昌风.jpg" alt="联系人照片" class="profile-pic">
+            <div class="info">
+                <h2>文常风</h2>
+                <p><strong>职位：</strong>营销员</p >
+                <p><strong>公司：</strong>绿动星球游戏有限公司</p >
+                <p><strong>邮箱：</strong>3393696094@qq.com</p >
+                <p><strong>电话：</strong>13419499790</p >
+                <p><strong>地址：</strong>资阳口腔职业学院</p >
+            </div>
+        </div>
+    </div>
+    </div>
+    <div id="resume5" class="resume-container active">
+    <div class="container">
+        <div class="header">
+            <h1>联系人介绍</h1>
+        </div>
+        <div class="profile">
+            <img src="img/陈鹏.jpg" alt="联系人照片" class="profile-pic">
+            <div class="info">
+                <h2>陈鹏</h2>
+                <p><strong>职位：</strong>风险管理员</p >
+                <p><strong>公司：</strong>绿动星球游戏有限公司</p >
+                <p><strong>邮箱：</strong>3393696094@qq.com</p >
+                <p><strong>电话：</strong>13419499790</p >
+                <p><strong>地址：</strong>资阳口腔职业学院</p >
+            </div>
+        </div>
+    </div>
+    </div>
+    <button onclick="showNextResume()">下一张</button>
+
+<script>
+var currentResume = 1; // 当前显示的简历编号
+var totalResumes = 2;var totalResumes = 3;var totalResumes = 4; // 总共的简历数量
+var totalResumes = 5;// 总共的简历数量
+
+function showNextResume() {
+  var currentDiv = document.getElementById('resume' + currentResume);
+  currentDiv.classList.remove('active');
+  
+  currentResume++;
+  if (currentResume > totalResumes) {
+    currentResume = 1; // 如果是最后一个简历，则回到第一个
+  }
+  
+  var nextDiv = document.getElementById('resume' + currentResume);
+  nextDiv.classList.add('active');
+}
+</script>
+</body>
+</html>
+ 
